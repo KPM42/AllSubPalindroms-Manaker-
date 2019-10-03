@@ -1,5 +1,6 @@
 vector<vector<int>> Palindroms(string s)
 {
+	//0 - четная, 1 - нечетная, хранятся центры маскимальных подпалиндромов
 	int n = s.length();
 	vector<vector<int>> p(2, vector<int>(n, 0));
 	for (int z = 0, l = 0, r = 0; z < 2; z++, l = 0, r = 0)
